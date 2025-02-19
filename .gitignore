@@ -1,0 +1,11 @@
+# Sanal ortam dosyaları
+venv/
+
+# API anahtarları
+.env
+
+# Mac çöp dosyaları
+.DS_Store
+
+# Python cache dosyaları
+__pycache__/
