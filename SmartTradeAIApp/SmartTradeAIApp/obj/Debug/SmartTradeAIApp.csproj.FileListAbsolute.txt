@@ -1,0 +1,14 @@
+C:\Users\Administrator\Desktop\SmartTrade-AI\SmartTradeAIApp\SmartTradeAIApp\bin\Debug\SmartTradeAIApp.exe.config
+C:\Users\Administrator\Desktop\SmartTrade-AI\SmartTradeAIApp\SmartTradeAIApp\bin\Debug\SmartTradeAIApp.exe
+C:\Users\Administrator\Desktop\SmartTrade-AI\SmartTradeAIApp\SmartTradeAIApp\bin\Debug\SmartTradeAIApp.pdb
+C:\Users\Administrator\Desktop\SmartTrade-AI\SmartTradeAIApp\SmartTradeAIApp\obj\Debug\SmartTradeAIApp.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\SmartTrade-AI\SmartTradeAIApp\SmartTradeAIApp\obj\Debug\SmartTradeAIApp.MainForm.resources
+C:\Users\Administrator\Desktop\SmartTrade-AI\SmartTradeAIApp\SmartTradeAIApp\obj\Debug\SmartTradeAIApp.Properties.Resources.resources
+C:\Users\Administrator\Desktop\SmartTrade-AI\SmartTradeAIApp\SmartTradeAIApp\obj\Debug\SmartTradeAIApp.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\SmartTrade-AI\SmartTradeAIApp\SmartTradeAIApp\obj\Debug\SmartTradeAIApp.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\SmartTrade-AI\SmartTradeAIApp\SmartTradeAIApp\obj\Debug\SmartTradeAIApp.exe
+C:\Users\Administrator\Desktop\SmartTrade-AI\SmartTradeAIApp\SmartTradeAIApp\obj\Debug\SmartTradeAIApp.pdb
+C:\Users\Administrator\Desktop\SmartTrade-AI\SmartTradeAIApp\SmartTradeAIApp\obj\Debug\SmartTradeAIApp.CoinsForm.resources
+C:\Users\Administrator\Desktop\SmartTrade-AI\SmartTradeAIApp\SmartTradeAIApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\SmartTrade-AI\SmartTradeAIApp\SmartTradeAIApp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\SmartTrade-AI\SmartTradeAIApp\SmartTradeAIApp\obj\Debug\SmartTra.7B0727F8.Up2Date
