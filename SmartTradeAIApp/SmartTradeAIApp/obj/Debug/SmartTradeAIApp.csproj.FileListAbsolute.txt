@@ -12,3 +12,4 @@ C:\Users\Administrator\Desktop\SmartTrade-AI\SmartTradeAIApp\SmartTradeAIApp\obj
 C:\Users\Administrator\Desktop\SmartTrade-AI\SmartTradeAIApp\SmartTradeAIApp\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Administrator\Desktop\SmartTrade-AI\SmartTradeAIApp\SmartTradeAIApp\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Administrator\Desktop\SmartTrade-AI\SmartTradeAIApp\SmartTradeAIApp\obj\Debug\SmartTra.7B0727F8.Up2Date
+C:\Users\Administrator\Desktop\SmartTrade-AI\SmartTradeAIApp\SmartTradeAIApp\obj\Debug\SmartTradeAIApp.watchList.resources

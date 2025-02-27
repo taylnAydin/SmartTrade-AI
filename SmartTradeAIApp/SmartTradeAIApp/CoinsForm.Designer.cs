@@ -28,12 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CoinsForm));
             this.bck_btn = new System.Windows.Forms.Button();
             this.shw_btn = new System.Windows.Forms.Button();
             this.listViewCoins = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lblTitle = new System.Windows.Forms.Label();
+            this.chartPrices = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.lblPrediction = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.chartPrices)).BeginInit();
             this.SuspendLayout();
             // 
             // bck_btn
@@ -89,7 +95,31 @@
             this.lblTitle.Size = new System.Drawing.Size(438, 29);
             this.lblTitle.TabIndex = 4;
             this.lblTitle.Text = "Top 25 Coins - 24h Volume";
-            this.lblTitle.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // chartPrices
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chartPrices.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartPrices.Legends.Add(legend1);
+            this.chartPrices.Location = new System.Drawing.Point(595, 92);
+            this.chartPrices.Name = "chartPrices";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chartPrices.Series.Add(series1);
+            this.chartPrices.Size = new System.Drawing.Size(731, 671);
+            this.chartPrices.TabIndex = 5;
+            this.chartPrices.Text = "chart1";
+            // 
+            // lblPrediction
+            // 
+            this.lblPrediction.AutoSize = true;
+            this.lblPrediction.Location = new System.Drawing.Point(864, 791);
+            this.lblPrediction.Name = "lblPrediction";
+            this.lblPrediction.Size = new System.Drawing.Size(35, 13);
+            this.lblPrediction.TabIndex = 6;
+            this.lblPrediction.Text = "label1";
             // 
             // CoinsForm
             // 
@@ -97,6 +127,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MidnightBlue;
             this.ClientSize = new System.Drawing.Size(1584, 861);
+            this.Controls.Add(this.lblPrediction);
+            this.Controls.Add(this.chartPrices);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.listViewCoins);
             this.Controls.Add(this.shw_btn);
@@ -110,6 +142,7 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.CoinsForm_FormClosed);
             this.Load += new System.EventHandler(this.CoinsForm_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CoinsForm_KeyDown);
+            ((System.ComponentModel.ISupportInitialize)(this.chartPrices)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -122,5 +155,7 @@
         private System.Windows.Forms.ListView listViewCoins;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartPrices;
+        private System.Windows.Forms.Label lblPrediction;
     }
 }

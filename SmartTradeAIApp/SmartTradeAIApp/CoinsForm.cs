@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -21,14 +23,19 @@ namespace SmartTradeAIApp
 
         private async void CoinsForm_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("Fetching top 25 coins by volume in the last 24 hours. This may take 15-20 seconds. Please wait...", "Loading", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (!IsFlaskRunning())
+            {
+                StartFlaskAPI();
+            }
+
+            MessageBox.Show("Fetching top 25 coins by volume in the last 24 hours. This may take 15-20 seconds. Please wait...",
+                            "Loading", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             var coins = await GetTop25CoinsByVolume();
 
             if (coins != null && coins.Any())
             {
                 listViewCoins.Items.Clear();
-
                 foreach (var coin in coins)
                 {
                     ListViewItem item = new ListViewItem(coin);
@@ -40,8 +47,6 @@ namespace SmartTradeAIApp
                 MessageBox.Show("Failed to fetch coin data!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-
 
         private async Task<List<string>> GetTop25CoinsByVolume()
         {
@@ -81,9 +86,45 @@ namespace SmartTradeAIApp
             mainForm.Show();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private bool IsFlaskRunning()
         {
+            try
+            {
+                using (var client = new WebClient())
+                {
+                    string response = client.DownloadString("http://127.0.0.1:5000/");
+                    return response.Contains("SmartTrade AI Flask API is Running!");
+                }
+            }
+            catch
+            {
+                return false;
+            }
+        }
 
+        private void StartFlaskAPI()
+        {
+            try
+            {
+                ProcessStartInfo start = new ProcessStartInfo
+                {
+                    FileName = @"C:\Users\Administrator\Desktop\SmartTrade-AI\venv\Scripts\python.exe",
+                    Arguments = @"""C:\Users\Administrator\Desktop\SmartTrade-AI\ml Model\mlModel.py""",
+                    UseShellExecute = false,
+                    RedirectStandardOutput = true,
+                    RedirectStandardError = true,
+                    CreateNoWindow = true
+                };
+
+
+                Process process = new Process { StartInfo = start };
+                process.Start();
+              
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Failed to start Flask API: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
