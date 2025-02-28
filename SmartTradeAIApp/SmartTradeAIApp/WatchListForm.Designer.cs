@@ -1,6 +1,6 @@
 ﻿namespace SmartTradeAIApp
 {
-    partial class watchList
+    partial class WatchListForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(watchList));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WatchListForm));
             this.listView1 = new System.Windows.Forms.ListView();
             this.name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.price = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -67,7 +67,7 @@
             // date
             // 
             this.date.Text = "DATE";
-            this.date.Width = 500;
+            this.date.Width = 510;
             // 
             // bck_btn
             // 
@@ -79,8 +79,9 @@
             this.bck_btn.TabIndex = 1;
             this.bck_btn.Text = "BACK";
             this.bck_btn.UseVisualStyleBackColor = false;
+            this.bck_btn.Click += new System.EventHandler(this.bck_btn_Click);
             // 
-            // watchList
+            // WatchListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -90,9 +91,11 @@
             this.Controls.Add(this.listView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "watchList";
+            this.Name = "WatchListForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SmartTrade AI";
+            this.Load += new System.EventHandler(this.WatchListForm_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.WatchListForm_KeyDown);
             this.ResumeLayout(false);
 
         }

@@ -38,7 +38,6 @@
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lblTitle = new System.Windows.Forms.Label();
             this.chartPrices = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.lblPrediction = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.chartPrices)).BeginInit();
             this.SuspendLayout();
             // 
@@ -105,21 +104,13 @@
             this.chartPrices.Location = new System.Drawing.Point(595, 92);
             this.chartPrices.Name = "chartPrices";
             series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chartPrices.Series.Add(series1);
-            this.chartPrices.Size = new System.Drawing.Size(731, 671);
+            this.chartPrices.Size = new System.Drawing.Size(967, 671);
             this.chartPrices.TabIndex = 5;
             this.chartPrices.Text = "chart1";
-            // 
-            // lblPrediction
-            // 
-            this.lblPrediction.AutoSize = true;
-            this.lblPrediction.Location = new System.Drawing.Point(864, 791);
-            this.lblPrediction.Name = "lblPrediction";
-            this.lblPrediction.Size = new System.Drawing.Size(35, 13);
-            this.lblPrediction.TabIndex = 6;
-            this.lblPrediction.Text = "label1";
             // 
             // CoinsForm
             // 
@@ -127,7 +118,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MidnightBlue;
             this.ClientSize = new System.Drawing.Size(1584, 861);
-            this.Controls.Add(this.lblPrediction);
             this.Controls.Add(this.chartPrices);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.listViewCoins);
@@ -156,6 +146,5 @@
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartPrices;
-        private System.Windows.Forms.Label lblPrediction;
     }
 }

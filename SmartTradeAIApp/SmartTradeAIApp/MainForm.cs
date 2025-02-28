@@ -50,6 +50,22 @@ namespace SmartTradeAIApp
         {
             Application.Exit();
         }
+
+        private void prtf_btn_Click(object sender, EventArgs e)
+        {
+            PortfolioForm portfolioForm = new PortfolioForm(this);
+            portfolioForm.FormClosed += (s, args) => this.Show(); 
+            this.Hide(); 
+            portfolioForm.Show();
+        }
+
+        private void watchList_Click(object sender, EventArgs e)
+        {
+            WatchListForm watchForm = new WatchListForm(this);
+            watchForm.FormClosed += (s, args) => this.Show();
+            this.Hide();
+            watchForm.Show();
+        }
     }
 }
 
