@@ -132,6 +132,7 @@
             this.add_btn.TabIndex = 8;
             this.add_btn.Text = "ADD";
             this.add_btn.UseVisualStyleBackColor = false;
+            this.add_btn.Click += new System.EventHandler(this.add_btn_Click);
             // 
             // coins_view
             // 

@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\SmartTrade-AI\\SmartTradeAIApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4C1C02D5-27CE-4AD7-83DD-88F2482A8EDA}|SmartTradeAIApp\\SmartTradeAIApp.csproj|c:\\users\\administrator\\desktop\\smarttrade-ai\\smarttradeaiapp\\smarttradeaiapp\\watchlistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4C1C02D5-27CE-4AD7-83DD-88F2482A8EDA}|SmartTradeAIApp\\SmartTradeAIApp.csproj|solutionrelative:smarttradeaiapp\\watchlistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4C1C02D5-27CE-4AD7-83DD-88F2482A8EDA}|SmartTradeAIApp\\SmartTradeAIApp.csproj|c:\\users\\administrator\\desktop\\smarttrade-ai\\smarttradeaiapp\\smarttradeaiapp\\portfolioform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4C1C02D5-27CE-4AD7-83DD-88F2482A8EDA}|SmartTradeAIApp\\SmartTradeAIApp.csproj|solutionrelative:smarttradeaiapp\\portfolioform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C1C02D5-27CE-4AD7-83DD-88F2482A8EDA}|SmartTradeAIApp\\SmartTradeAIApp.csproj|c:\\users\\administrator\\desktop\\smarttrade-ai\\smarttradeaiapp\\smarttradeaiapp\\watchlistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C1C02D5-27CE-4AD7-83DD-88F2482A8EDA}|SmartTradeAIApp\\SmartTradeAIApp.csproj|solutionrelative:smarttradeaiapp\\watchlistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4C1C02D5-27CE-4AD7-83DD-88F2482A8EDA}|SmartTradeAIApp\\SmartTradeAIApp.csproj|c:\\users\\administrator\\desktop\\smarttrade-ai\\smarttradeaiapp\\smarttradeaiapp\\portfolioform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -26,56 +18,31 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "WatchListForm.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\SmartTrade-AI\\SmartTradeAIApp\\SmartTradeAIApp\\WatchListForm.cs",
-              "RelativeDocumentMoniker": "SmartTradeAIApp\\WatchListForm.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\SmartTrade-AI\\SmartTradeAIApp\\SmartTradeAIApp\\WatchListForm.cs",
-              "RelativeToolTip": "SmartTradeAIApp\\WatchListForm.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAUwCkAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-28T14:17:04.266Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "PortfolioForm.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\SmartTrade-AI\\SmartTradeAIApp\\SmartTradeAIApp\\PortfolioForm.cs",
               "RelativeDocumentMoniker": "SmartTradeAIApp\\PortfolioForm.cs",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\SmartTrade-AI\\SmartTradeAIApp\\SmartTradeAIApp\\PortfolioForm.cs",
               "RelativeToolTip": "SmartTradeAIApp\\PortfolioForm.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAACoAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAEYAAAAAAAAAAAArwFcAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-28T14:16:53.243Z",
+              "WhenOpened": "2025-03-07T12:55:13.361Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "PortfolioForm.cs [Tasar\u0131m]",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\SmartTrade-AI\\SmartTradeAIApp\\SmartTradeAIApp\\PortfolioForm.cs",
               "RelativeDocumentMoniker": "SmartTradeAIApp\\PortfolioForm.cs",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\SmartTrade-AI\\SmartTradeAIApp\\SmartTradeAIApp\\PortfolioForm.cs [Tasar\u0131m]",
               "RelativeToolTip": "SmartTradeAIApp\\PortfolioForm.cs [Tasar\u0131m]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-28T14:16:51.136Z",
-              "EditorCaption": " [Tasar\u0131m]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "WatchListForm.cs [Tasar\u0131m]",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\SmartTrade-AI\\SmartTradeAIApp\\SmartTradeAIApp\\WatchListForm.cs",
-              "RelativeDocumentMoniker": "SmartTradeAIApp\\WatchListForm.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\SmartTrade-AI\\SmartTradeAIApp\\SmartTradeAIApp\\WatchListForm.cs [Tasar\u0131m]",
-              "RelativeToolTip": "SmartTradeAIApp\\WatchListForm.cs [Tasar\u0131m]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T14:07:40.53Z",
+              "WhenOpened": "2025-03-05T11:28:20.25Z",
               "EditorCaption": " [Tasar\u0131m]"
             }
           ]
