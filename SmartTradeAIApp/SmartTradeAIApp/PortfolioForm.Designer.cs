@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
@@ -49,7 +50,10 @@
             this.note_box = new System.Windows.Forms.TextBox();
             this.portfolio_chart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.delete = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.portfolio_chart)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // bck_btn
@@ -142,6 +146,7 @@
             this.price_colmn,
             this.amount_colmn,
             this.note_colmn});
+            this.coins_view.ContextMenuStrip = this.contextMenuStrip1;
             this.coins_view.FullRowSelect = true;
             this.coins_view.HideSelection = false;
             this.coins_view.Location = new System.Drawing.Point(401, 34);
@@ -219,6 +224,20 @@
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 13;
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.delete});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 48);
+            this.contextMenuStrip1.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
+            // 
+            // delete
+            // 
+            this.delete.Name = "delete";
+            this.delete.Size = new System.Drawing.Size(180, 22);
+            this.delete.Text = "Delete";
+            // 
             // PortfolioForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 29F);
@@ -250,6 +269,7 @@
             this.Load += new System.EventHandler(this.PortfolioForm_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.PortfolioForm_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.portfolio_chart)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -274,5 +294,7 @@
         private System.Windows.Forms.ColumnHeader note_colmn;
         private System.Windows.Forms.DataVisualization.Charting.Chart portfolio_chart;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem delete;
     }
 }
